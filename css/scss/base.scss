@@ -1,0 +1,121 @@
+$breakpoints: ("phone-wide": 400px,
+    "tablet": 768px,
+    "tablet-wide": 1024px,
+    "desktop": 1280px,
+    "desktop-wide": 1366px,
+    "desktop-extra-wide": 1440px,
+    "desktop-large": 1600px,
+    "desktop-extra-large": 1900px,
+    "desktop-xx-large": 2500px);
+
+
+@mixin mq($px, $worh: width, $type: min) {
+    @if map_has_key($breakpoints, $px) {
+        $px: map_get($breakpoints, $px);
+
+        @if $type==min {
+            $px: $px - 1px;
+        }
+
+        @media only screen and (#{$type}-#{$worh}: $px) {
+            @content;
+        }
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    outline: none
+}
+
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+ul, ul:not(.browser-default) {
+    list-style: disc;
+    padding-inline-start: 40px;
+    li,ul:not(.browser-default)>li {
+        list-style: disc;
+        line-height: 30px;
+        margin-block-end: 1em;
+        margin-block-start: 1em;
+        ul, ul:not(.browser-default) {
+            list-style: circle;
+            padding-inline-start: 40px;
+            li,ul:not(.browser-default)>li {
+                list-style: circle;
+                ul, ul:not(.browser-default) {
+                    list-style: square;
+                    padding-inline-start: 40px;
+                    li,ul:not(.browser-default)>li {
+                        list-style: square;
+                    }
+                }
+            }
+        }
+    }
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+strong {
+    font-weight: 900
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 600;
+}
+
+body {
+    font-size: 19px;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+    h1 {
+        font-size: 27px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        line-height: 30px;
+    }
+}
+
+@include mq('tablet-wide') {
+    body {
+        font-size: 21px;
+
+        h1 {
+            font-size: 42px
+        }
+
+        h2 {
+            font-size: 32px
+        }
+
+        h3 {
+            font-size: 25px
+        }
+    }
+}

@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;600;800&display=swap');
+@import 'base';
+
+$corPrimaria:#52ac65;
+$corSecundaria:#fff;
+$corTerciaria:#3e7a4a;
+$corQuartenaria:#6bf55c;
+
+body {
+    font-family: 'Baloo Paaji 2', cursive;
+    color: $corPrimaria;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.card {
+    background-color: $corSecundaria;
+    color: $corPrimaria;
+    display: block;
+    border-radius: 30px;
+    padding: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.button {
+    background-color: $corQuartenaria;
+    display: inline-flex;
+    border-radius: 30px;
+    padding: 5px 1rem;
+    margin: .5rem;
+    justify-content: center;
+    align-items: center;
+    color: $corSecundaria;
+    transition: .3s;
+
+    &:hover {
+        transform: scale(1.05);
+        filter: brightness(120%);
+    }
+
+    i {
+        font-size: 1.5em;
+        margin-right: 5px;
+    }
+}
+
+.header,
+.section,
+.footer {
+    padding: 2rem 0;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+.header {
+    background-image: url('../img/header.png');
+    background-size: cover;
+    background-position: left top;
+    color: $corSecundaria;
+
+    h2 {
+        font-weight: normal;
+    }
+
+    h1,
+    h2,
+    h3 {
+        margin: 1rem 0;
+    }
+
+    &__destaque {
+        background-color: $corTerciaria;
+        display: inline-block;
+        padding: .5rem;
+        font-weight: 800;
+    }
+
+    &__logo {
+        max-width: 345px;
+    }
+
+    &__card {
+        max-width: 425px;
+        display: inline-block;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    &__numero {
+        margin: 0;
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+}
+
+.main {
+    .container--curto {
+        width: 47.25rem !important;
+    }
+
+    .section {
+        &__titulo {
+            margin-top: 0;
+        }
+
+        &Servicos {
+            &__card {
+                border: 3px solid $corPrimaria;
+                margin-bottom: 1rem;
+                min-height: 570px;
+                transition: .3s;
+
+                &:hover {
+                    background-color: $corPrimaria;
+                    color: $corSecundaria;
+                }
+
+                h3 {
+                    font-size: 1.3em;
+                    min-height: 64px;
+                }
+            }
+
+            li {
+                margin: 0;
+            }
+
+            &__chamada {
+                font-size: 1.8rem;
+            }
+        }
+
+        &Contatar {
+            background-image: url('../img/contatar.png');
+            background-size: cover;
+            background-position: left top;
+            color: $corSecundaria;
+
+            h3 {
+                font-weight: normal;
+            }
+
+            p {
+                margin: .5rem 0;
+                font-size: 1.2rem;
+            }
+
+            &__numero {
+                display: inline-block;
+                background-color: $corSecundaria;
+                color: $corPrimaria;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            &__button {
+                background-color: $corSecundaria;
+                color: $corPrimaria;
+                margin: 1rem 0;
+                font-size: .8em;
+            }
+        }
+
+        &Experiencia,
+        &Favores {
+            p {
+                color: #4C4B5E;
+            }
+        }
+
+        &Experiencia {
+            h3 {
+                strong {
+                    font-weight: 900;
+                }
+            }
+
+            &__medalha {
+                max-width: 80px;
+                margin:0 auto;
+                margin-bottom: 1rem;
+                display: block;
+
+            }
+
+            &__exemplo {
+                border-radius: 50%;
+                max-width: 300px;
+                display: block;
+                margin: 2rem auto;
+            }
+
+            &__garantia {
+                font-size: 1.9rem;
+                margin-top: 0;
+                color: $corPrimaria;
+            }
+
+            &__clicar {
+                font-size: 2rem;
+            }
+        }
+
+        &Favores {
+            padding-top: 0;
+        }
+
+        &Importante {
+            background-color: #ffbf34;
+
+            p {
+                font-size: 1.4em;
+            }
+
+            &__card {
+                background-color: transparent;
+                color: $corSecundaria;
+                font-weight: bold;
+                border: 3px solid $corSecundaria;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: #363636;
+    color: $corSecundaria;
+
+    &__logo {
+        max-width: 200px;
+    }
+}
+
+@include mq("tablet-wide") {
+
+    .header,
+    .section,
+    .footer {
+        padding: 4rem 0;
+    }
+
+    .header {
+        h1 {
+            font-size: 2.2em;
+        }
+
+        &__destaque {
+            font-size: 1.7rem;
+        }
+    }
+ .main{
+    .sectionExperiencia{
+        &__medalha{
+            display: inline-block;
+            margin: 0;
+            margin-right: 1rem;
+
+        }
+        &__garantia{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+ }
+
+}

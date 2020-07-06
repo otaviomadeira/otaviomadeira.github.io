@@ -1,0 +1,99 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+ul, ul:not(.browser-default) {
+  list-style: disc;
+  padding-inline-start: 40px;
+}
+
+ul li, ul ul:not(.browser-default) > li, ul:not(.browser-default) li, ul:not(.browser-default) ul:not(.browser-default) > li {
+  list-style: disc;
+  line-height: 30px;
+  margin-block-end: 1em;
+  margin-block-start: 1em;
+}
+
+ul li ul, ul li ul:not(.browser-default), ul ul:not(.browser-default) > li ul, ul ul:not(.browser-default) > li ul:not(.browser-default), ul:not(.browser-default) li ul, ul:not(.browser-default) li ul:not(.browser-default), ul:not(.browser-default) ul:not(.browser-default) > li ul, ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) {
+  list-style: circle;
+  padding-inline-start: 40px;
+}
+
+ul li ul li, ul li ul ul:not(.browser-default) > li, ul li ul:not(.browser-default) li, ul li ul:not(.browser-default) ul:not(.browser-default) > li, ul ul:not(.browser-default) > li ul li, ul ul:not(.browser-default) > li ul ul:not(.browser-default) > li, ul ul:not(.browser-default) > li ul:not(.browser-default) li, ul ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li, ul:not(.browser-default) li ul li, ul:not(.browser-default) li ul ul:not(.browser-default) > li, ul:not(.browser-default) li ul:not(.browser-default) li, ul:not(.browser-default) li ul:not(.browser-default) ul:not(.browser-default) > li, ul:not(.browser-default) ul:not(.browser-default) > li ul li, ul:not(.browser-default) ul:not(.browser-default) > li ul ul:not(.browser-default) > li, ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) li, ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li {
+  list-style: circle;
+}
+
+ul li ul li ul, ul li ul li ul:not(.browser-default), ul li ul ul:not(.browser-default) > li ul, ul li ul ul:not(.browser-default) > li ul:not(.browser-default), ul li ul:not(.browser-default) li ul, ul li ul:not(.browser-default) li ul:not(.browser-default), ul li ul:not(.browser-default) ul:not(.browser-default) > li ul, ul li ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default), ul ul:not(.browser-default) > li ul li ul, ul ul:not(.browser-default) > li ul li ul:not(.browser-default), ul ul:not(.browser-default) > li ul ul:not(.browser-default) > li ul, ul ul:not(.browser-default) > li ul ul:not(.browser-default) > li ul:not(.browser-default), ul ul:not(.browser-default) > li ul:not(.browser-default) li ul, ul ul:not(.browser-default) > li ul:not(.browser-default) li ul:not(.browser-default), ul ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li ul, ul ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default), ul:not(.browser-default) li ul li ul, ul:not(.browser-default) li ul li ul:not(.browser-default), ul:not(.browser-default) li ul ul:not(.browser-default) > li ul, ul:not(.browser-default) li ul ul:not(.browser-default) > li ul:not(.browser-default), ul:not(.browser-default) li ul:not(.browser-default) li ul, ul:not(.browser-default) li ul:not(.browser-default) li ul:not(.browser-default), ul:not(.browser-default) li ul:not(.browser-default) ul:not(.browser-default) > li ul, ul:not(.browser-default) li ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default), ul:not(.browser-default) ul:not(.browser-default) > li ul li ul, ul:not(.browser-default) ul:not(.browser-default) > li ul li ul:not(.browser-default), ul:not(.browser-default) ul:not(.browser-default) > li ul ul:not(.browser-default) > li ul, ul:not(.browser-default) ul:not(.browser-default) > li ul ul:not(.browser-default) > li ul:not(.browser-default), ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) li ul, ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) li ul:not(.browser-default), ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li ul, ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) {
+  list-style: square;
+  padding-inline-start: 40px;
+}
+
+ul li ul li ul li, ul li ul li ul ul:not(.browser-default) > li, ul li ul li ul:not(.browser-default) li, ul li ul li ul:not(.browser-default) ul:not(.browser-default) > li, ul li ul ul:not(.browser-default) > li ul li, ul li ul ul:not(.browser-default) > li ul ul:not(.browser-default) > li, ul li ul ul:not(.browser-default) > li ul:not(.browser-default) li, ul li ul ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li, ul li ul:not(.browser-default) li ul li, ul li ul:not(.browser-default) li ul ul:not(.browser-default) > li, ul li ul:not(.browser-default) li ul:not(.browser-default) li, ul li ul:not(.browser-default) li ul:not(.browser-default) ul:not(.browser-default) > li, ul li ul:not(.browser-default) ul:not(.browser-default) > li ul li, ul li ul:not(.browser-default) ul:not(.browser-default) > li ul ul:not(.browser-default) > li, ul li ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) li, ul li ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li, ul ul:not(.browser-default) > li ul li ul li, ul ul:not(.browser-default) > li ul li ul ul:not(.browser-default) > li, ul ul:not(.browser-default) > li ul li ul:not(.browser-default) li, ul ul:not(.browser-default) > li ul li ul:not(.browser-default) ul:not(.browser-default) > li, ul ul:not(.browser-default) > li ul ul:not(.browser-default) > li ul li, ul ul:not(.browser-default) > li ul ul:not(.browser-default) > li ul ul:not(.browser-default) > li, ul ul:not(.browser-default) > li ul ul:not(.browser-default) > li ul:not(.browser-default) li, ul ul:not(.browser-default) > li ul ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li, ul ul:not(.browser-default) > li ul:not(.browser-default) li ul li, ul ul:not(.browser-default) > li ul:not(.browser-default) li ul ul:not(.browser-default) > li, ul ul:not(.browser-default) > li ul:not(.browser-default) li ul:not(.browser-default) li, ul ul:not(.browser-default) > li ul:not(.browser-default) li ul:not(.browser-default) ul:not(.browser-default) > li, ul ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li ul li, ul ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li ul ul:not(.browser-default) > li, ul ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) li, ul ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li, ul:not(.browser-default) li ul li ul li, ul:not(.browser-default) li ul li ul ul:not(.browser-default) > li, ul:not(.browser-default) li ul li ul:not(.browser-default) li, ul:not(.browser-default) li ul li ul:not(.browser-default) ul:not(.browser-default) > li, ul:not(.browser-default) li ul ul:not(.browser-default) > li ul li, ul:not(.browser-default) li ul ul:not(.browser-default) > li ul ul:not(.browser-default) > li, ul:not(.browser-default) li ul ul:not(.browser-default) > li ul:not(.browser-default) li, ul:not(.browser-default) li ul ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li, ul:not(.browser-default) li ul:not(.browser-default) li ul li, ul:not(.browser-default) li ul:not(.browser-default) li ul ul:not(.browser-default) > li, ul:not(.browser-default) li ul:not(.browser-default) li ul:not(.browser-default) li, ul:not(.browser-default) li ul:not(.browser-default) li ul:not(.browser-default) ul:not(.browser-default) > li, ul:not(.browser-default) li ul:not(.browser-default) ul:not(.browser-default) > li ul li, ul:not(.browser-default) li ul:not(.browser-default) ul:not(.browser-default) > li ul ul:not(.browser-default) > li, ul:not(.browser-default) li ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) li, ul:not(.browser-default) li ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li, ul:not(.browser-default) ul:not(.browser-default) > li ul li ul li, ul:not(.browser-default) ul:not(.browser-default) > li ul li ul ul:not(.browser-default) > li, ul:not(.browser-default) ul:not(.browser-default) > li ul li ul:not(.browser-default) li, ul:not(.browser-default) ul:not(.browser-default) > li ul li ul:not(.browser-default) ul:not(.browser-default) > li, ul:not(.browser-default) ul:not(.browser-default) > li ul ul:not(.browser-default) > li ul li, ul:not(.browser-default) ul:not(.browser-default) > li ul ul:not(.browser-default) > li ul ul:not(.browser-default) > li, ul:not(.browser-default) ul:not(.browser-default) > li ul ul:not(.browser-default) > li ul:not(.browser-default) li, ul:not(.browser-default) ul:not(.browser-default) > li ul ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li, ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) li ul li, ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) li ul ul:not(.browser-default) > li, ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) li ul:not(.browser-default) li, ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) li ul:not(.browser-default) ul:not(.browser-default) > li, ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li ul li, ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li ul ul:not(.browser-default) > li, ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) li, ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li ul:not(.browser-default) ul:not(.browser-default) > li {
+  list-style: square;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+strong {
+  font-weight: 900;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}
+
+body {
+  font-size: 19px;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body h1 {
+  font-size: 27px;
+}
+
+body h2 {
+  font-size: 22px;
+}
+
+body h3 {
+  font-size: 20px;
+}
+
+body p {
+  line-height: 30px;
+}
+
+@media only screen and (min-width: 1023px) {
+  body {
+    font-size: 21px;
+  }
+  body h1 {
+    font-size: 42px;
+  }
+  body h2 {
+    font-size: 32px;
+  }
+  body h3 {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=base.css.map */
